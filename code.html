@@ -1,0 +1,909 @@
+<!DOCTYPE html><html lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#93000a",
+          "surface-tint": "#565e74",
+          "secondary-fixed-dim": "#6bd8cb",
+          "outline-variant": "#c6c6cd",
+          "on-tertiary-fixed-variant": "#584323",
+          "inverse-on-surface": "#eaf1ff",
+          "surface-bright": "#f8f9ff",
+          "on-error": "#ffffff",
+          "inverse-surface": "#213145",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#dae2fd",
+          "surface-container-lowest": "#ffffff",
+          "surface-dim": "#cbdbf5",
+          "tertiary": "#000000",
+          "surface-container-high": "#dce9ff",
+          "error": "#ba1a1a",
+          "on-surface": "#0b1c30",
+          "surface-container": "#e5eeff",
+          "secondary": "#006a61",
+          "on-tertiary-container": "#9a805b",
+          "tertiary-fixed": "#fedeb2",
+          "surface-variant": "#d3e4fe",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#eff4ff",
+          "on-secondary-container": "#006f66",
+          "on-primary": "#ffffff",
+          "primary": "#000000",
+          "outline": "#76777d",
+          "on-primary-fixed-variant": "#3f465c",
+          "on-tertiary-fixed": "#281800",
+          "on-surface-variant": "#45464d",
+          "secondary-container": "#86f2e4",
+          "background": "#f8f9ff",
+          "inverse-primary": "#bec6e0",
+          "on-primary-fixed": "#131b2e",
+          "primary-fixed-dim": "#bec6e0",
+          "surface": "#f8f9ff",
+          "tertiary-container": "#281800",
+          "on-secondary-fixed": "#00201d",
+          "tertiary-fixed-dim": "#e0c298",
+          "secondary-fixed": "#89f5e7",
+          "primary-container": "#131b2e",
+          "on-primary-container": "#7c839b",
+          "on-background": "#0b1c30",
+          "surface-container-highest": "#d3e4fe",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#005049"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "margin": "4rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-sm": "1rem",
+          "margin-tablet": "2rem"
+        },
+        "fontFamily": {
+          "label-button": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Noto Serif"
+          ],
+          "body-lead": [
+            "Plus Jakarta Sans"
+          ],
+          "label-uppercase": [
+            "Plus Jakarta Sans"
+          ],
+          "body-default": [
+            "Plus Jakarta Sans"
+          ],
+          "body-strong": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Noto Serif"
+          ],
+          "headline-lg": [
+            "Noto Serif"
+          ],
+          "headline-lg-mobile": [
+            "Noto Serif"
+          ],
+          "caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-button": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lead": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-uppercase": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-default": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-strong": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "caption": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary-container py-space-xs px-margin-mobile md:px-margin-tablet xl:px-margin"><div class="max-w-[1280px] mx-auto flex items-center justify-between text-caption font-caption"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span><span class="">Servicios de aseo profesional en toda la Quinta Región y alrededores</span><span class="hidden md:inline text-outline-variant">|</span><span class="hidden md:inline text-secondary font-body-strong">Atención inmediata WhatsApp</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs text-on-primary-container hover:text-on-primary transition-colors" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[15px]">chat</span><span class="font-body-strong">+56 9 4972 1106</span></a></div></div></div><div class="h-20 bg-surface-container-lowest/90 backdrop-blur-xl px-margin-mobile md:px-margin-tablet xl:px-margin"><div class="max-w-[1280px] h-full mx-auto flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">Celica Moreno</span><span class="material-symbols-outlined text-secondary text-[18px]">clean_hands</span></div><span class="font-label-uppercase text-label-uppercase text-secondary font-bold tracking-wider">Servicios de Aseo</span></div><span class="hidden lg:inline-flex items-center gap-space-xs py-space-xs px-space-sm rounded-full bg-secondary-container text-on-secondary-container text-label-uppercase font-label-uppercase"><span class="material-symbols-outlined text-[14px]">auto_awesome</span>Lujo &amp; Excelencia</span></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-on-surface font-body-strong"><a aria-current="page" class="transition-colors text-on-surface font-body-strong" data-path="inicio" href="#">Inicio</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" data-path="servicios" href="#">Servicios</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" data-path="planes-y-membresias" href="#">Planes &amp; Membresías</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" data-path="por-que-elegirnos" href="#">Por Qué Elegirnos</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" data-path="cotizador-online" href="#">Cotizador Online</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors text-label-button font-label-button" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[18px]">call</span><span class="">+56 9 4972 1106</span></a><a class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary transition-all text-label-button font-label-button shadow-[0_4px_14px_rgba(0,0,0,0.12)]" data-path="cotizador-online" href="#"><span class="material-symbols-outlined text-[18px]">calendar_today</span><span class="">Cotizar / Agendar</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION CON ATELIER DE LUJO & VISTA PANORÁMICA -->
+<section class="relative w-full -mt-20 pt-28 pb-24 md:pt-36 md:pb-32 px-margin-mobile md:px-margin-tablet xl:px-margin overflow-hidden bg-primary-container text-on-primary">
+<!-- Scrim de fondo con video -->
+<video class="absolute inset-0 z-0 w-full h-full object-cover opacity-60 mix-blend-luminosity" autoplay loop muted playsinline>
+  <source src="./hero-bg.mp4" type="video/mp4">
+</video>
+<!-- Gradiente de profundidad y velo sutil -->
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-primary-container via-primary-container/85 to-transparent"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-[1280px] mx-auto flex flex-col items-start justify-center min-h-[520px]">
+<!-- Badges de Autoridad Superior -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-lg">
+<span class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary text-on-secondary font-label-uppercase text-label-uppercase tracking-widest shadow-md">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+          ESTÁNDAR HOTELERO 5 ESTRELLAS
+        </span>
+<span class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-highest/20 backdrop-blur-md text-primary-fixed font-label-uppercase text-label-uppercase tracking-wider">
+<span class="material-symbols-outlined text-secondary-fixed text-[14px]">verified</span>
+          PERSONAL 100% VALIDADO
+        </span>
+</div>
+<!-- Título de Impacto Editorial Serif -->
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary max-w-3xl leading-tight mb-space-md">
+        Confianza para tu hogar, <span class="italic text-tertiary-fixed font-normal">excelencia</span> en cada visita.
+      </h1>
+<p class="font-body-lead text-body-lead text-primary-fixed-dim max-w-2xl mb-space-xl">
+        Celica Moreno eleva el concepto de aseo a una experiencia de hospitalidad superior para residencias exclusivas, casas de veraneo y departamentos de alto estándar en la Quinta Región (Viña del Mar, Concón y Valparaíso).
+      </p>
+<!-- Botones de Acción Inmediata -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-sm px-8 py-4 rounded-full bg-tertiary-fixed text-tertiary-container hover:bg-white hover:text-primary transition-all font-label-button text-label-button shadow-xl hover:-translate-y-0.5" href="#cotizador">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="">Agendar Servicio</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-8 py-4 rounded-full bg-surface-container-highest/20 backdrop-blur-md text-on-primary hover:bg-surface-container-highest/40 transition-all font-label-button text-label-button" href="#planes">
+<span class="material-symbols-outlined text-[20px]">loyalty</span>
+<span class="">Conocer Planes &amp; Membresías</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-6 py-4 rounded-full bg-[#25D366]/20 text-[#25D366] hover:bg-[#25D366]/30 transition-all font-label-button text-label-button" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank">
+<span class="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-pulse"></span>
+<span class="">WhatsApp Inmediato</span>
+</a>
+</div>
+<!-- Micro Métricas de Calidad -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-lg pt-space-xl mt-space-xl text-primary-fixed">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary leading-none">100%</span>
+<span class="font-caption text-caption text-primary-fixed-dim mt-1">Garantía de Satisfacción Total</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary leading-none">+3.500</span>
+<span class="font-caption text-caption text-primary-fixed-dim mt-1">Visitas Impecables Ejecutadas</span>
+</div>
+<div class="flex flex-col col-span-2 sm:col-span-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary leading-none">4.9/5</span>
+<span class="font-caption text-caption text-primary-fixed-dim mt-1">Valoración Media Propietarios</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: POR QUÉ ELEGIRNOS / LO QUE NOS HACE DIFERENTES -->
+<section class="w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-surface">
+<div class="max-w-[1280px] mx-auto flex flex-col items-center">
+<div class="text-center max-w-xl mb-16">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-space-xs">POR QUÉ ELEGIRNOS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Lo que nos hace diferentes</h2>
+<div class="w-12 h-0.5 bg-tertiary-fixed mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- Grid de 6 Pilares Esenciales con Emblema Central Conceptual -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg w-full">
+<!-- Pilar 1 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Respuesta Inmediata</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Atención directa por WhatsApp o llamada en tiempo real. Coordinamos sin formularios lentos ni demoras burocráticas.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Tiempo de respuesta &lt; 3 minutos
+          </span>
+</div>
+<!-- Pilar 2 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Personal Estrictamente Validado</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Cada colaboradora supera un riguroso proceso de verificación de antecedentes penales, referencias laborales contrastadas e inducción técnica.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Filtro de admisión del 4%
+          </span>
+</div>
+<!-- Pilar 3 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Factura o Boleta Electrónica</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Formalidad y orden contable garantizado. Emitimos boleta o factura de inmediato para particulares, inversionistas o administraciones corporativas.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Cumplimiento tributario SII
+          </span>
+</div>
+<!-- Pilar 4 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Perfiles Públicos &amp; Tranquilidad</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Conoce la fotografía, nombre y ficha verificada de la profesional asignada a tu hogar con antelación a su llegada al domicilio.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Seguridad para tu condominio
+          </span>
+</div>
+<!-- Pilar 5 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">security_update_good</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Garantía de Satisfacción Total</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Inspeccionamos cada rincón. Si algún detalle no cumple con tus expectativas de pulcritud, volvemos a repasar la zona sin costo adicional.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Compromiso de re-visita en 24h
+          </span>
+</div>
+<!-- Pilar 6 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">touch_app</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Reserva Online Intuitiva</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Escoge el día, las horas requeridas y la modalidad desde tu teléfono o computador en tan solo unos clics. Confirmación transparente garantizada.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Agendamiento 24/7
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN DE SERVICIOS: LIMPIEZA A TU MEDIDA -->
+<section class="w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-surface-container-low" id="servicios">
+<div class="max-w-[1280px] mx-auto flex flex-col items-center">
+<div class="text-center max-w-xl mb-16">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-space-xs">NUESTROS SERVICIOS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Limpieza y aseo a tu medida</h2>
+<div class="w-12 h-0.5 bg-tertiary-fixed mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- Grid de Tarjetas de Servicios con Visuales y Desglose -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg w-full">
+<!-- Tarjeta 1: Limpieza Smart Express -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 w-full bg-cover bg-center" data-alt="Modern pristine minimalist bedroom and dressing room, tidy bed with crisp white luxury linens, sunlit natural wood floor, impeccably clean surfaces in high-end apartment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBK2HPIhB3SDWLeXNGL_dXmTvoT-214EwnTb1f0bQQ2gwA3gt5qodifyzho8K547puTmmC0DIlch4cPXOxra-gYPQaRhXqB0K69N-7Z6aGVcRgnt07fgHrLj3aQ9QcVa9cK3s2VcJPi9LlU68lNSotxeUje2HJOveV0YDIhv3B1UTq3n8qKe7fyn29yu6lGwaHj44x5Va1Lo4u3llgDJWgUgxPaShaZOD3J98gH5HCYZLz4tP4vFmZe')">
+<span class="absolute top-3 right-3 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-uppercase text-label-uppercase">
+              3 a 4 Horas
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">electric_bolt</span>
+<span class="font-label-uppercase text-label-uppercase">Frecuente / Ligero</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Limpieza Express / Smart</h3>
+<p class="font-body-default text-body-default text-on-surface-variant mb-space-md">
+                Mantenimiento de alta calidad para hogares en orden. Aspirado profundo, desinfección de encimeras, sanitarios y tendido de camas.
+              </p>
+<ul class="flex flex-col gap-1.5 font-caption text-caption text-on-surface-variant mb-space-lg">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Pisos y superficies desinfectadas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Aseo de baños de visitas y suite</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Retiro de residuos y ventilación</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Desde</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$68.000</span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary text-on-primary hover:bg-secondary transition-colors font-label-button text-label-button" href="#cotizador">
+                Seleccionar
+              </a>
+</div>
+</div>
+</div>
+<!-- Tarjeta 2: Aseo Profundo Full -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-md ring-2 ring-secondary/20 hover:shadow-xl transition-all duration-300 relative">
+<div class="absolute top-2 left-2 z-10">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-uppercase text-label-uppercase shadow-sm">
+              Más Solicitado
+            </span>
+</div>
+<div class="relative h-48 w-full bg-cover bg-center" data-alt="Gleaming modern luxury kitchen island with stainless steel appliances, spotless polished quartz countertops, immaculate tile backsplash, warm recessed LED lighting reflecting on clean surfaces" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-DKHqgPh8cMUWJAI2Kr-_LgU02wWZUiY-ri4TQoBN-o9R-j1Q4EJOcls-I1J64UDDX65MgkgjX_kA4nDu59yxLIznB5bGSJ6jo7qz7l6Bm2JAbmyIF-BhIQivMOaumOk2T6LaYwmcgmTzghKlxU6mFj_TGoG_-QKpTwot45AVlErDW3j657xcNaelbaBQMsDFH6hYlpASYZIz7O6NvyAarne-cCFNDPUaujeWlnCAN83lwFl8QCwC')">
+<span class="absolute top-3 right-3 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-uppercase text-label-uppercase">
+              6 a 8 Horas
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">cleaning_services</span>
+<span class="font-label-uppercase text-label-uppercase">Exhaustivo</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Aseo Profundo Full</h3>
+<p class="font-body-default text-body-default text-on-surface-variant mb-space-md">
+                Intervención minuciosa. Desengrase a fondo en cocina (horno, campana), sarro en vidrios de ducha, zócalos y perfiles de ventanales.
+              </p>
+<ul class="flex flex-col gap-1.5 font-caption text-caption text-on-surface-variant mb-space-lg">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Desengrase térmico de campana y horno</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Remoción de sarro y fragües en baños</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Limpieza interior y exterior de vidrios</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Desde</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$95.000</span>
+</div>
+<a class="px-4 py-2 rounded-full bg-secondary text-on-secondary hover:bg-primary transition-colors font-label-button text-label-button" href="#cotizador">
+                Seleccionar
+              </a>
+</div>
+</div>
+</div>
+<!-- Tarjeta 3: Post Mudanza & Fin de Obra -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 w-full bg-cover bg-center" data-alt="Empty spacious luxury apartment with floor-to-ceiling windows, polished pristine hardwood floors reflecting afternoon light, clean architectural lines ready for move-in handover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7QXxg3wMV0R6rE_EJaZnycOxSfWj4WglOCQffQZ4VNuRiugneVon4sQY3d8joXtl0Nz7DLyfyvU9_kvv4rDw0TLHP6BMhuhyRM2cAb4lx7_ctc3nw4FWsaFsDWpsoJTv6uCxsY6EIzdWYbL8-hpiFCru0SfXUNp7VjSLSEGoFFccipz84G8o7DTQj0v46IjHgBWVrigHPPCSB-W3CMPbAY0k3u7lYi-J3soZ5a1l3UYDFTI3zYZcD')">
+<span class="absolute top-3 right-3 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-uppercase text-label-uppercase">
+              Cuadrilla Especial
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+<span class="font-label-uppercase text-label-uppercase">Mudanza / Entrega</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Post Mudanza (In &amp; Out)</h3>
+<p class="font-body-default text-body-default text-on-surface-variant mb-space-md">
+                Dejamos tu nuevo hogar desinfectado y listo para habitar, o tu propiedad anterior impecable para garantizar la devolución del arriendo.
+              </p>
+<ul class="flex flex-col gap-1.5 font-caption text-caption text-on-surface-variant mb-space-lg">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Clósets y gabinetes por dentro y fuera</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Aspirado de polvillo fino de obra</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Checklist formal para corretaje</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Desde</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$110.000</span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary text-on-primary hover:bg-secondary transition-colors font-label-button text-label-button" href="#cotizador">
+                Seleccionar
+              </a>
+</div>
+</div>
+</div>
+<!-- Tarjeta 4: Sanitización & Desinfección Premium -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 w-full bg-cover bg-center" data-alt="Professional eco-friendly mist sanitization equipment in modern stylish home interior, subtle fine steam mist, serene clean atmosphere with lush house plants and organic textures" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJ638rXyxW4nvjUS8iROKBfjd2qqcWHo8T6mOVHM7TJxBBN0FIsQfAyvRa3Yf3e-5QEcZg6MLi3kyXdilvX-PmwYIukHXHuet2tclfJiMikyvbbtqzSP0V7OreCv8l2-nwDp-44AMsm4i7EM7jhLbparwzZ9SSkE1P9RfobmBOJv9kQlpy9Jc5uuPT3T4lVFdkSzYMvm0iVSqizdM0VKCcBciORzpzfED2G3fsODpWEAxDa5kPvxv9')">
+<span class="absolute top-3 right-3 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-uppercase text-label-uppercase">
+              Termonebulización
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">sanitizer</span>
+<span class="font-label-uppercase text-label-uppercase">Bio-Seguridad</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Sanitización &amp; Alérgenos</h3>
+<p class="font-body-default text-body-default text-on-surface-variant mb-space-md">
+                Eliminación de virus, ácaros y bacterias con amonios cuaternarios de 5ta generación no corrosivos y seguros para niños y mascotas.
+              </p>
+<ul class="flex flex-col gap-1.5 font-caption text-caption text-on-surface-variant mb-space-lg">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Nebulización ambiental sin residuo graso</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Tratamiento anti-ácaros en colchones</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">done</span>Certificado de desinfección ambiental</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Desde</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$75.000</span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary text-on-primary hover:bg-secondary transition-colors font-label-button text-label-button" href="#cotizador">
+                Seleccionar
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Banner de Personalización & Asistencia Inmediata -->
+<div class="mt-space-xl p-space-lg rounded-xl bg-surface-container w-full flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<div>
+<span class="font-body-strong text-body-strong text-on-surface block">¿Requieres un servicio con requerimientos específicos?</span>
+<span class="font-body-default text-body-default text-on-surface-variant">Limpieza de oficinas corporativas, alfombras tapizadas o cristales de doble altura.</span>
+</div>
+</div>
+<a class="px-space-lg py-space-sm rounded-full bg-primary text-on-primary hover:bg-secondary transition-colors font-label-button text-label-button shrink-0 flex items-center gap-space-xs" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">Consultar por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECCIÓN DE RESEÑAS -->
+<section class="w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-surface-container-lowest">
+<div class="max-w-[1280px] mx-auto flex flex-col items-center">
+<div class="text-center max-w-xl mb-16">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-space-xs">TESTIMONIOS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Lo que dicen nuestros clientes</h2>
+<div class="w-12 h-0.5 bg-tertiary-fixed mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg w-full">
+<div class="p-space-xl rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-tertiary-fixed-dim mb-4">
+<span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface-variant italic mb-6">"Tengo mi departamento de fin de semana en Concón y siempre era un problema llegar y tener que limpiar. Desde que contraté la membresía de Celica Moreno, llego a descansar. El nivel de detalle y el olor a limpio al entrar es de hotel 5 estrellas. 100% recomendados."</p>
+</div>
+<span class="font-body-strong text-body-strong text-on-surface block">— Camila R., Propietaria en Costa de Montemar</span>
+</div>
+<div class="p-space-xl rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-tertiary-fixed-dim mb-4">
+<span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface-variant italic mb-6">"Lo que más valoro es la tranquilidad. Saber que el personal está validado me da mucha seguridad para dejarlas en mi casa en Viña del Mar mientras trabajo. Son extremadamente profesionales, puntuales y dejan todo impecable."</p>
+</div>
+<span class="font-body-strong text-body-strong text-on-surface block">— Felipe A., Ejecutivo</span>
+</div>
+<div class="p-space-xl rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-tertiary-fixed-dim mb-4">
+<span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined text-[20px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface-variant italic mb-6">"Contratamos el aseo profundo tras unas remodelaciones en nuestra casa en Reñaca y el resultado fue increíble. Sacaron manchas que pensé que nunca saldrían y los ventanales quedaron invisibles. Un servicio verdaderamente premium."</p>
+</div>
+<span class="font-body-strong text-body-strong text-on-surface block">— María José V., Residente en Reñaca</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: MEMBRESÍAS Y PLANES MENSUALES (INSPIRADA EN LA ESTÉTICA OBSIDIANA/DARK MINIMAL) -->
+<section class="w-full py-24 px-margin-mobile md:px-margin-tablet xl:px-margin bg-[#131b2e] text-white" id="planes">
+<div class="max-w-[1280px] mx-auto flex flex-col items-center">
+<div class="text-center max-w-2xl mb-16">
+<span class="font-label-uppercase text-label-uppercase text-[#89f5e7] tracking-widest block mb-space-xs">PLANES MENSUALES</span>
+<h2 class="font-headline-lg text-headline-lg text-white">Membresías Celica Moreno</h2>
+<p class="font-body-lead text-body-lead text-outline-variant mt-2">
+          Suscríbete a un plan continuo y disfruta de tu hogar siempre impecable con tarifas preferenciales y el mismo equipo de confianza.
+        </p>
+<div class="w-12 h-0.5 bg-tertiary-fixed mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- Selector de Frecuencia Interactivo / Visual -->
+<div class="flex items-center p-1.5 rounded-full bg-[#213145] mb-space-xl">
+<button class="plan-tab active px-space-lg py-2 rounded-full bg-white text-[#0b1c30] font-label-button text-label-button shadow-md transition-all" type="button">
+          Residencial Mensual
+        </button>
+<button class="plan-tab px-space-lg py-2 rounded-full text-outline-variant hover:text-white font-label-button text-label-button transition-all" type="button">
+          Corporativo &amp; Oficinas
+        </button>
+</div>
+<!-- Comparativa de 3 Planes de Membresía -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg w-full items-stretch">
+<!-- Plan 1: Esencial Quincenal -->
+<div class="flex flex-col p-space-xl rounded-xl bg-[#213145]/60 backdrop-blur-md shadow-lg justify-between transition-transform hover:-translate-y-1">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-white">Plan Esencial</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#131b2e] text-outline-variant font-label-uppercase text-label-uppercase">2 Visitas/mes</span>
+</div>
+<p class="font-body-default text-body-default text-outline-variant mb-space-lg">
+              Ideal para departamentos de 1 a 2 dormitorios habitados por personas de alta intensidad laboral.
+            </p>
+<div class="mb-space-lg pb-space-lg">
+<span class="font-headline-lg text-headline-lg font-bold text-white">$120.000</span>
+<span class="font-caption text-caption text-outline-variant">/ mes (facturación recurrente)</span>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-default text-body-default text-outline-variant">
+<li class="flex items-center gap-space-sm text-white">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">2 visitas mensuales de 4 horas</span>
+</li>
+<li class="flex items-center gap-space-sm text-white">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Misma profesional asignada fija</span>
+</li>
+<li class="flex items-center gap-space-sm text-white">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Detergentes e insumos certificados</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Flexibilidad de reprogramación 48h</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-xl">
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-full bg-white/10 hover:bg-white hover:text-[#0b1c30] text-white transition-colors font-label-button text-label-button" href="#cotizador">
+              Contratar Esencial
+            </a>
+</div>
+</div>
+<!-- Plan 2: Confort Semanal (Destacado) -->
+<div class="flex flex-col p-space-xl rounded-xl bg-gradient-to-b from-[#213145] to-[#131b2e] shadow-2xl relative justify-between scale-105 z-10 ring-2 ring-[#89f5e7]">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#89f5e7] text-[#00201d] font-label-uppercase text-label-uppercase tracking-wider font-bold shadow-md">
+            MÁXIMA TRANQUILIDAD
+          </div>
+<div>
+<div class="flex justify-between items-center mb-space-sm pt-2">
+<span class="font-headline-sm text-headline-sm font-bold text-white">Plan Confort Semanal</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#006a61] text-white font-label-uppercase text-label-uppercase">4 Visitas/mes</span>
+</div>
+<p class="font-body-default text-body-default text-outline-variant mb-space-lg">
+              El favorito de familias y residencias activas. Casa impecable y ordenada sin esfuerzo continuo.
+            </p>
+<div class="mb-space-lg pb-space-lg">
+<span class="font-headline-lg text-headline-lg font-bold text-[#89f5e7]">$189.000</span>
+<span class="font-caption text-caption text-outline-variant">/ mes (ahorro del 18%)</span>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-default text-body-default text-white">
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="font-body-strong">4 visitas mensuales (1 por semana)</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Personal verificado 100% permanente</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Incluye 1 Aseo Profundo de cocina al mes</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Canal de WhatsApp exclusivo con supervisora</span>
+</li>
+<li class="flex items-center gap-space-sm text-outline-variant">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Seguro de garantía de satisfacción total</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-xl">
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-full bg-[#89f5e7] hover:bg-white text-[#00201d] transition-colors font-label-button text-label-button shadow-lg" href="#cotizador">
+              Contratar Confort
+            </a>
+</div>
+</div>
+<!-- Plan 3: Elite Residence -->
+<div class="flex flex-col p-space-xl rounded-xl bg-[#213145]/60 backdrop-blur-md shadow-lg justify-between transition-transform hover:-translate-y-1">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-white">Plan Elite VIP</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#131b2e] text-outline-variant font-label-uppercase text-label-uppercase">8 Visitas/mes</span>
+</div>
+<p class="font-body-default text-body-default text-outline-variant mb-space-lg">
+              Para casas de gran metraje y residencias que requieren mantenimiento continuo bi-semanal.
+            </p>
+<div class="mb-space-lg pb-space-lg">
+<span class="font-headline-lg text-headline-lg font-bold text-white">$290.000</span>
+<span class="font-caption text-caption text-outline-variant">/ mes</span>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-default text-body-default text-outline-variant">
+<li class="flex items-center gap-space-sm text-white">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">2 visitas semanales (8 visitas/mes)</span>
+</li>
+<li class="flex items-center gap-space-sm text-white">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Cuadrilla rotativa coordinada con respaldo</span>
+</li>
+<li class="flex items-center gap-space-sm text-white">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Sanitización UV trimestral incluida</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[#89f5e7] text-[18px]">check_circle</span>
+<span class="">Factura exenta o con crédito IVA para empresas</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-xl">
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-full bg-white/10 hover:bg-white hover:text-[#0b1c30] text-white transition-colors font-label-button text-label-button" href="#cotizador">
+              Contratar Elite VIP
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COTIZADOR INTERACTIVO / FORMULARIO RÁPIDO -->
+<section class="w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-surface" id="cotizador">
+<div class="max-w-[1280px] mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Columna Izquierda: Información de Contacto Directo -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-wider block mb-2">COTIZADOR RÁPIDO</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-md">
+              Agenda tu visita en 60 segundos
+            </h2>
+<p class="font-body-default text-body-default text-on-surface-variant mb-space-lg">
+              Selecciona los parámetros de tu hogar y obtén una estimación precisa. Nuestro equipo se contactará inmediatamente para confirmar los detalles.
+            </p>
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-body-strong text-body-strong text-on-surface block">Horarios Flexibles</span>
+<span class="font-caption text-caption text-on-surface-variant">Lunes a Sábado: 08:30 a 19:30 hrs</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div>
+<span class="font-body-strong text-body-strong text-on-surface block">Cobertura Primaria</span>
+<span class="font-caption text-caption text-on-surface-variant">Viña del Mar, Concón, Reñaca, Valparaíso, Quilpué, Villa Alemana</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div>
+<span class="font-body-strong text-body-strong text-on-surface block">Soporte Express WhatsApp</span>
+<a class="font-caption text-caption text-secondary font-body-strong hover:underline" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank">+56 9 4972 1106</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonio Breve Concierge -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">format_quote</span>
+<div>
+<p class="font-caption text-caption text-on-surface italic">
+                "Excelente atención. La puntualidad y pulcritud del equipo de Celica Moreno en nuestro departamento en San Damián superó nuestras expectativas."
+              </p>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant block mt-1">Marcela E. — Concón</span>
+</div>
+</div>
+</div>
+<!-- Columna Derecha: Formulario Calculador Interactivo -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg rounded-xl">
+<form class="flex flex-col gap-space-md" id="quote-form" onsubmit="event.preventDefault(); document.getElementById('success-message').classList.remove('hidden');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Tipo de Inmueble</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none">
+<option>Departamento (1 - 2 Dormitorios)</option>
+<option>Departamento Grande (3+ Dormitorios)</option>
+<option>Casa / Parcela Residencial</option>
+<option>Oficina / Local Comercial</option>
+</select>
+</div>
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Servicio Requerido</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none">
+<option>Aseo Profundo Full (Recomendado)</option>
+<option>Limpieza Express / Mantenimiento</option>
+<option>Post Mudanza (In / Out)</option>
+<option>Membresía Mensual Recurrente</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Comuna</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none">
+<option>Viña del Mar</option>
+<option>Concón</option>
+<option>Reñaca</option>
+<option>Valparaíso</option>
+<option>Quilpué</option>
+<option>Villa Alemana</option>
+<option>Otra Comuna Quinta Región</option>
+</select>
+</div>
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Fecha Estimada</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none" type="date">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Tu Nombre Completo</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none" placeholder="Ej: Patricia Edwards" required="" type="text">
+</div>
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Teléfono WhatsApp</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none" placeholder="+56 9 4972 1106" required="" type="tel">
+</div>
+</div>
+<div>
+<label class="font-body-strong text-body-strong text-on-surface block mb-1">Requerimientos o comentarios adicionales (opcional)</label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-default focus:ring-2 focus:ring-secondary outline-none" placeholder="Indica si tienes mascotas, vidrios altos o si requieres factura con RUT de empresa..." rows="2"></textarea>
+</div>
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary" id="terms" required="" type="checkbox">
+<label class="font-caption text-caption text-on-surface-variant" for="terms">
+                Acepto el contacto por WhatsApp para recibir la cotización formal y confirmación de disponibilidad.
+              </label>
+</div>
+<button class="w-full py-4 rounded-full bg-primary text-on-primary hover:bg-secondary transition-all font-label-button text-label-button shadow-lg flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span class="">Solicitar Disponibilidad y Cotización</span>
+</button>
+<div class="hidden p-space-md rounded-lg bg-secondary-container text-on-secondary-container font-body-default text-center" id="success-message">
+              ✓ Solicitud recibida con éxito. Te hemos escrito un mensaje a WhatsApp para confirmar los detalles.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: TRABAJA CON NOSOTROS (RECLUTAMIENTO EXCLUSIVO DE PERSONAL) -->
+<section class="w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-surface-container">
+<div class="max-w-[1280px] mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<div class="max-w-2xl">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-space-xs">ÚNETE AL EQUIPO</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-sm">Trabaja con nosotros</h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant mb-space-md">
+            ¿Tienes experiencia comprobada en aseo y mantenimiento de residencias exclusivas o departamentos de alto estándar? Postula hoy y forma parte de un equipo con excelentes remuneraciones, estabilidad laboral y estándares de excelencia.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md text-caption font-caption text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>Contrato formal y beneficios</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>Capacitación continua</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>Ambiente de respeto y dignidad</span>
+</div>
+</div>
+<div class="shrink-0 flex flex-col gap-space-sm w-full sm:w-auto">
+<a class="px-8 py-4 rounded-full bg-tertiary-fixed text-tertiary-container hover:bg-primary hover:text-on-primary transition-all font-label-button text-label-button text-center shadow-md" href="https://wa.me/56949721106?text=Hola,%20quisiera%20postular%20para%20trabajar%20con%20ustedes" rel="noopener noreferrer" target="_blank">
+            Postular Ahora por WhatsApp
+          </a>
+<span class="text-center font-caption text-caption text-on-surface-variant">Requisito: Certificado de antecedentes al día</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER FINAL CALL TO ACTION / LISTO PARA EMPEZAR -->
+<section class="relative w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-primary text-on-primary overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-alt="Clean minimal architectural surface, refined marble texture, serene interior lighting with gold warm tones" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmwakD9467rwES8bpW6RpehpsduFuxwgfMX7TLcYw7hQsY54Kgz6-m5RYQscIVnRtTLyRy1TkDD4GQXqH88M5M4-0I0vxmK-zgh1rfVmI6yxt3woZ-0Cjc9fk5zLdydK3RYBDk4jKXBaN3x6mTtllsRBq51wspghYfSbHc-zxWjCKCEI4sShlNiRih-wgCQ-2hiqXIkW5kBwQtL-b0fxlUrkI5DWpQIqfMgiT4SlmAr6YzI8h8kZYx')">
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto flex flex-col items-center text-center">
+<span class="font-label-uppercase text-label-uppercase text-secondary-fixed tracking-widest mb-space-xs">¿LISTO PARA EMPEZAR?</span>
+<h2 class="font-display-hero text-headline-lg md:text-display-hero max-w-3xl mb-space-md">
+        Disfruta de un hogar perfecto, sin esfuerzo ni preocupaciones.
+      </h2>
+<p class="font-body-lead text-body-lead text-primary-fixed-dim max-w-2xl mb-space-xl">
+        Agenda tu primer servicio hoy y descubre la diferencia Celica Moreno en cada detalle de tu residencia.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full max-w-md">
+<a class="w-full sm:w-auto px-8 py-4 rounded-full bg-tertiary-fixed text-tertiary-container hover:bg-white hover:text-primary transition-all font-label-button text-label-button shadow-lg" href="#cotizador">
+          Agendar Servicio Ahora
+        </a>
+<a class="w-full sm:w-auto px-8 py-4 rounded-full bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white transition-all font-label-button text-label-button" href="#servicios">
+          Ver Catálogo de Servicios
+        </a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interacción sencilla de pestañas de Planes
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.plan-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-white', 'text-[#0b1c30]', 'shadow-md');
+          t.classList.add('text-outline-variant');
+        });
+        tab.classList.remove('text-outline-variant');
+        tab.classList.add('bg-white', 'text-[#0b1c30]', 'shadow-md');
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg px-margin-mobile md:px-margin-tablet xl:px-margin"><div class="max-w-[1280px] mx-auto"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Celica Moreno</span><span class="font-label-uppercase text-label-uppercase text-secondary font-bold tracking-wider">Servicios de Aseo Premium</span></div><p class="font-body-default text-body-default text-on-surface-variant">Estándares hoteleros de 5 estrellas y desinfección integral para residencias de alto nivel, departamentos y oficinas corporativas en la Región Metropolitana.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div><div class="flex flex-col gap-space-md"><span class="font-body-strong text-body-strong text-on-surface uppercase tracking-wider">Servicios Especializados</span><ul class="flex flex-col gap-space-xs text-body-default font-body-default text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a data-path="servicios" href="#" class="">Aseo Profundo &amp; Detallado</a></li><li class="hover:text-on-surface transition-colors"><a data-path="servicios" href="#" class="">Limpieza de Hogar Periódica</a></li><li class="hover:text-on-surface transition-colors"><a data-path="servicios" href="#" class="">Oficinas y Empresas</a></li><li class="hover:text-on-surface transition-colors"><a data-path="servicios" href="#" class="">Post Mudanza (In &amp; Out)</a></li><li class="hover:text-on-surface transition-colors"><a data-path="servicios" href="#" class="">Sanitización &amp; Desinfección UV</a></li><li class="hover:text-on-surface transition-colors"><a data-path="servicios" href="#" class="">Limpieza de Vidrios &amp; Ventanales</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-body-strong text-body-strong text-on-surface uppercase tracking-wider">Zonas de Cobertura</span><p class="font-body-default text-body-default text-on-surface-variant">Atención prioritaria y cuadrillas dedicadas en:</p><ul class="grid grid-cols-2 gap-space-xs text-caption font-caption text-on-surface-variant"><li class="">• Las Condes</li><li class="">• Vitacura</li><li class="">• Lo Barnechea</li><li class="">• Providencia</li><li class="">• La Reina</li><li class="">• Ñuñoa</li><li class="">• Chicureo</li><li class="">• Santiago Centro</li></ul><div class="mt-space-xs"><span class="font-caption text-caption text-secondary font-body-strong">Consulte disponibilidad para comunas aledañas.</span></div></div><div class="flex flex-col gap-space-md"><span class="font-body-strong text-body-strong text-on-surface uppercase tracking-wider">Compromiso y Confianza</span><div class="flex flex-col gap-space-sm"><div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">security</span><div><div class="font-body-strong text-body-strong text-on-surface">Personal Verificado</div><div class="font-caption text-caption text-on-surface-variant">Certificado de antecedentes y rigurosa selección.</div></div></div><div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span><div><div class="font-body-strong text-body-strong text-on-surface">Factura Electrónica</div><div class="font-caption text-caption text-on-surface-variant">Emisión inmediata para empresas y particulares.</div></div></div><div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><div><div class="font-body-strong text-body-strong text-on-surface">Garantía de Calidad</div><div class="font-caption text-caption text-on-surface-variant">Re-inspección inmediata ante cualquier detalle.</div></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low"><div class="font-caption text-caption text-on-surface-variant text-center md:text-left">© 2024 Celica Moreno Servicios de Aseo SpA. Todos los derechos reservados. Santiago de Chile.</div><div class="flex items-center gap-space-md text-caption font-caption text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="contacto" href="#">Términos de Servicio</a><a class="hover:text-on-surface transition-colors" data-path="contacto" href="#">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors" data-path="contacto" href="#">Preguntas Frecuentes</a></div></div></div></footer>
+
+</body></html>
