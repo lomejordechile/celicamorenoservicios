@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="es" class="scroll-smooth" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#93000a",
+          "surface-tint": "#565e74",
+          "secondary-fixed-dim": "#6bd8cb",
+          "outline-variant": "#c6c6cd",
+          "on-tertiary-fixed-variant": "#584323",
+          "inverse-on-surface": "#eaf1ff",
+          "surface-bright": "#f8f9ff",
+          "on-error": "#ffffff",
+          "inverse-surface": "#213145",
+          "on-secondary": "#ffffff",
+          "primary-fixed": "#dae2fd",
+          "surface-container-lowest": "#ffffff",
+          "surface-dim": "#cbdbf5",
+          "tertiary": "#000000",
+          "surface-container-high": "#dce9ff",
+          "error": "#ba1a1a",
+          "on-surface": "#0b1c30",
+          "surface-container": "#e5eeff",
+          "secondary": "#006a61",
+          "on-tertiary-container": "#9a805b",
+          "tertiary-fixed": "#fedeb2",
+          "surface-variant": "#d3e4fe",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#eff4ff",
+          "on-secondary-container": "#006f66",
+          "on-primary": "#ffffff",
+          "primary": "#000000",
+          "outline": "#76777d",
+          "on-primary-fixed-variant": "#3f465c",
+          "on-tertiary-fixed": "#281800",
+          "on-surface-variant": "#45464d",
+          "secondary-container": "#86f2e4",
+          "background": "#f8f9ff",
+          "inverse-primary": "#bec6e0",
+          "on-primary-fixed": "#131b2e",
+          "primary-fixed-dim": "#bec6e0",
+          "surface": "#f8f9ff",
+          "tertiary-container": "#281800",
+          "on-secondary-fixed": "#00201d",
+          "tertiary-fixed-dim": "#e0c298",
+          "secondary-fixed": "#89f5e7",
+          "primary-container": "#131b2e",
+          "on-primary-container": "#7c839b",
+          "on-background": "#0b1c30",
+          "surface-container-highest": "#d3e4fe",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#005049"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "margin": "4rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "gutter-sm": "1rem",
+          "margin-tablet": "2rem"
+        },
+        "fontFamily": {
+          "label-button": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Noto Serif"
+          ],
+          "body-lead": [
+            "Plus Jakarta Sans"
+          ],
+          "label-uppercase": [
+            "Plus Jakarta Sans"
+          ],
+          "body-default": [
+            "Plus Jakarta Sans"
+          ],
+          "body-strong": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Noto Serif"
+          ],
+          "headline-lg": [
+            "Noto Serif"
+          ],
+          "headline-lg-mobile": [
+            "Noto Serif"
+          ],
+          "caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "label-button": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lead": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-uppercase": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-default": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-strong": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "caption": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary-container py-space-xs px-margin-mobile md:px-margin-tablet xl:px-margin"><div class="max-w-[1280px] mx-auto flex items-center justify-between text-caption font-caption"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span><span class="">Servicios de aseo profesional en toda la Quinta Región y alrededores</span><span class="hidden md:inline text-outline-variant">|</span><span class="hidden md:inline text-secondary font-body-strong">Atención inmediata WhatsApp</span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs text-on-primary-container hover:text-on-primary transition-colors" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[15px]">chat</span><span class="font-body-strong">+56 9 4972 1106</span></a></div></div></div><div class="h-20 bg-surface-container-lowest/90 backdrop-blur-xl px-margin-mobile md:px-margin-tablet xl:px-margin"><div class="max-w-[1280px] h-full mx-auto flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">Celica Moreno</span><span class="material-symbols-outlined text-secondary text-[18px]">clean_hands</span></div><span class="font-label-uppercase text-label-uppercase text-secondary font-bold tracking-wider">Servicios de Aseo</span></div><span class="hidden lg:inline-flex items-center gap-space-xs py-space-xs px-space-sm rounded-full bg-secondary-container text-on-secondary-container text-label-uppercase font-label-uppercase"><span class="material-symbols-outlined text-[14px]">auto_awesome</span>Lujo &amp; Excelencia</span></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-on-surface font-body-strong"><a aria-current="page" class="transition-colors text-on-surface font-body-strong" href="#">Inicio</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" href="servicios.html">Servicios</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" href="planes.html">Planes &amp; Membresías</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" href="por-que-elegirnos.html">Por Qué Elegirnos</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" href="cotizador.html">Cotizador Online</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-default text-body-default" href="#footer">Contacto</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors text-label-button font-label-button" href="https://wa.me/56949721106?text=Hola,%20me%20interesa%20cotizar%20un%20servicio%20de%20aseo" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[18px]">call</span><span class="">+56 9 4972 1106</span></a><a class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary transition-all text-label-button font-label-button shadow-[0_4px_14px_rgba(0,0,0,0.12)]" href="cotizador.html"><span class="material-symbols-outlined text-[18px]">calendar_today</span><span class="">Cotizar / Agendar</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- SECCIÓN: POR QUÉ ELEGIRNOS / LO QUE NOS HACE DIFERENTES -->
+<section class="w-full py-20 px-margin-mobile md:px-margin-tablet xl:px-margin bg-surface" id="por-que-elegirnos">
+<div class="max-w-[1280px] mx-auto flex flex-col items-center">
+<div class="text-center max-w-xl mb-16">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-widest block mb-space-xs">POR QUÉ ELEGIRNOS</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Lo que nos hace diferentes</h2>
+<div class="w-12 h-0.5 bg-tertiary-fixed mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- Grid de 6 Pilares Esenciales con Emblema Central Conceptual -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg w-full">
+<!-- Pilar 1 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Respuesta Inmediata</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Atención directa por WhatsApp o llamada en tiempo real. Coordinamos sin formularios lentos ni demoras burocráticas.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Tiempo de respuesta &lt; 3 minutos
+          </span>
+</div>
+<!-- Pilar 2 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Personal Estrictamente Validado</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Cada colaboradora supera un riguroso proceso de verificación de antecedentes penales, referencias laborales contrastadas e inducción técnica.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Filtro de admisión del 4%
+          </span>
+</div>
+<!-- Pilar 3 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Factura o Boleta Electrónica</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Formalidad y orden contable garantizado. Emitimos boleta o factura de inmediato para particulares, inversionistas o administraciones corporativas.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Cumplimiento tributario SII
+          </span>
+</div>
+<!-- Pilar 4 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Perfiles Públicos &amp; Tranquilidad</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Conoce la fotografía, nombre y ficha verificada de la profesional asignada a tu hogar con antelación a su llegada al domicilio.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Seguridad para tu condominio
+          </span>
+</div>
+<!-- Pilar 5 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">security_update_good</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Garantía de Satisfacción Total</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Inspeccionamos cada rincón. Si algún detalle no cumple con tus expectativas de pulcritud, volvemos a repasar la zona sin costo adicional.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Compromiso de re-visita en 24h
+          </span>
+</div>
+<!-- Pilar 6 -->
+<div class="group p-space-xl rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[24px]">touch_app</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Reserva Online Intuitiva</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+            Escoge el día, las horas requeridas y la modalidad desde tu teléfono o computador en tan solo unos clics. Confirmación transparente garantizada.
+          </p>
+<span class="mt-space-md inline-flex items-center text-caption font-caption text-secondary font-body-strong">
+            Agendamiento 24/7
+          </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interacción sencilla de pestañas de Planes
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.plan-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-white', 'text-[#0b1c30]', 'shadow-md');
+          t.classList.add('text-outline-variant');
+        });
+        tab.classList.remove('text-outline-variant');
+        tab.classList.add('bg-white', 'text-[#0b1c30]', 'shadow-md');
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg px-margin-mobile md:px-margin-tablet xl:px-margin"><div class="max-w-[1280px] mx-auto"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">Celica Moreno</span><span class="font-label-uppercase text-label-uppercase text-secondary font-bold tracking-wider">Servicios de Aseo Premium</span></div><p class="font-body-default text-body-default text-on-surface-variant">Estándares hoteleros de 5 estrellas y desinfección integral para residencias de alto nivel, departamentos y oficinas corporativas en la Región Metropolitana.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div><div class="flex flex-col gap-space-md"><span class="font-body-strong text-body-strong text-on-surface uppercase tracking-wider">Servicios Especializados</span><ul class="flex flex-col gap-space-xs text-body-default font-body-default text-on-surface-variant"><li class="hover:text-on-surface transition-colors"><a href="servicios.html" class="">Aseo Profundo &amp; Detallado</a></li><li class="hover:text-on-surface transition-colors"><a href="servicios.html" class="">Limpieza de Hogar Periódica</a></li><li class="hover:text-on-surface transition-colors"><a href="servicios.html" class="">Oficinas y Empresas</a></li><li class="hover:text-on-surface transition-colors"><a href="servicios.html" class="">Post Mudanza (In &amp; Out)</a></li><li class="hover:text-on-surface transition-colors"><a href="servicios.html" class="">Sanitización &amp; Desinfección UV</a></li><li class="hover:text-on-surface transition-colors"><a href="servicios.html" class="">Limpieza de Vidrios &amp; Ventanales</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-body-strong text-body-strong text-on-surface uppercase tracking-wider">Zonas de Cobertura</span><p class="font-body-default text-body-default text-on-surface-variant">Atención prioritaria y cuadrillas dedicadas en:</p><ul class="grid grid-cols-2 gap-space-xs text-caption font-caption text-on-surface-variant"><li class="">• Las Condes</li><li class="">• Vitacura</li><li class="">• Lo Barnechea</li><li class="">• Providencia</li><li class="">• La Reina</li><li class="">• Ñuñoa</li><li class="">• Chicureo</li><li class="">• Santiago Centro</li></ul><div class="mt-space-xs"><span class="font-caption text-caption text-secondary font-body-strong">Consulte disponibilidad para comunas aledañas.</span></div></div><div class="flex flex-col gap-space-md"><span class="font-body-strong text-body-strong text-on-surface uppercase tracking-wider">Compromiso y Confianza</span><div class="flex flex-col gap-space-sm"><div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">security</span><div><div class="font-body-strong text-body-strong text-on-surface">Personal Verificado</div><div class="font-caption text-caption text-on-surface-variant">Certificado de antecedentes y rigurosa selección.</div></div></div><div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">receipt_long</span><div><div class="font-body-strong text-body-strong text-on-surface">Factura Electrónica</div><div class="font-caption text-caption text-on-surface-variant">Emisión inmediata para empresas y particulares.</div></div></div><div class="flex items-start gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><div><div class="font-body-strong text-body-strong text-on-surface">Garantía de Calidad</div><div class="font-caption text-caption text-on-surface-variant">Re-inspección inmediata ante cualquier detalle.</div></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low"><div class="font-caption text-caption text-on-surface-variant text-center md:text-left">© 2024 Celica Moreno Servicios de Aseo SpA. Todos los derechos reservados. Santiago de Chile.</div><div class="flex items-center gap-space-md text-caption font-caption text-on-surface-variant"><a class="hover:text-on-surface transition-colors" href="#footer">Términos de Servicio</a><a class="hover:text-on-surface transition-colors" href="#footer">Políticas de Privacidad</a><a class="hover:text-on-surface transition-colors" href="#footer">Preguntas Frecuentes</a></div></div></div></footer>
+
+</body></html>
